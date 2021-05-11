@@ -1,0 +1,471 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: fantasy;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("images/header.jpeg");
+		height: 100vh;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center center;
+	position: relative;
+}
+
+.logo {
+	float: left;
+	width: 18%;
+}
+
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+
+}
+
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.nav-area li {
+	display: inline-block;
+}
+
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+
+.welcome-text h3 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.welcome-text h1 span {
+	color: #00fecb;
+}
+
+
+
+.features {
+	background-color: white;
+	padding: 60px 45px;
+}
+
+.features-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-column-gap: 45px;
+	grid-row-gap: 45px;
+}
+.featured-item img {
+	width: 400px;
+}
+
+.featured-item h1 {
+	text-align: center;
+
+}
+
+.featured-item p {
+	margin: 0;
+	line-height: 1.6;
+	stroke: white;
+	color: #333;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 100px;
+}
+
+.container::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("images/red2.jpeg") no-repeat center;
+	background-size: cover;
+	z-index: -1;
+	filter: blur(50px);
+}
+
+.contact-box {
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.24);
+}
+
+.left {
+	height: 100%;
+	background: url("images/cotact.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.right {
+	padding: 25px 40px;
+}
+
+h2 {
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+h2::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 50px;
+	border-radius: 2px;
+	background-color: orangered;
+}
+
+.field {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	outline: none;
+	border: 2px solid rgba(0, 0, 0, 0);
+	background-color: rgba(230, 230, 230, 0.6);
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: 0.3s;
+}
+
+.field:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field :focus {
+	background-color: #fff;
+	border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area {
+	min-height: 150px;
+}
+
+.button {
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+	font-size: 1.1rem;
+	background-color: orangered;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: rgb(8, 8, 8);
+	transition: 0.3s;
+}
+
+.button :hover {
+	background-color: orangered;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.header {
+	padding: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	background: orangered;
+	color: black;
+	font-size: 19px;
+}
+
+
+h2 {
+	font-size: 2em;
+	color: black;
+}
+
+.centered {
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+	.centered {
+		max-width: 52em;
+	}
+}
+
+.site-title {
+	margin: 0;
+	padding: 1em 0;
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+	color: black;
+}
+
+@media screen and (min-width: 44.44em) {
+	.site-title {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 50em) {
+	.site-title {
+		font-size: 2.5em;
+	}
+}
+
+.site-title a {
+	color: hsl(5, 45%, 95%);
+	text-decoration: none;
+}
+
+.site-title a:hover {
+	text-decoration: underline;
+}
+
+/* Card Based Layout - Base styles */
+body {
+	background: #ecf0f1;
+	line-height: 1.4;
+}
+
+.site-title {
+	color: white;
+}
+
+.card {
+	background: white;
+	margin-bottom: 2em;
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: normal;
+}
+
+.card-content p {
+	font-size: 95%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/* Flexbox styles */
+@media screen and (min-width: 40em) {
+	.cards {
+		margin-top: -1em;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.card {
+		margin-bottom: 1em;
+		display: flex;
+		flex: 0 1 calc(50% - 0.5em);
+		/* width: calc(50% - 1em); */
+	}
+}
+
+/* mq 40em*/
+
+@media screen and (min-width: 60em) {
+	.cards {
+		margin-top: inherit;
+	}
+
+	.card {
+		margin-bottom: 2em;
+		display: flex;
+		flex: 0 1 calc(33% - 0.5em);
+		/* width: calc(33% - 1em); */
+	}
+}
+
+/* mq 60em*/
+/*responsive*/
+
+@media (max-width: 600px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+
+	img {
+		width: 100                                                                                                                                                                                                                     px;
+	}
+
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+
+	.nav-area {
+		text-align: center;
+	}
+
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+
+	.contact-box {
+		grid-template-columns: 1fr;
+	}
+
+	.left {
+		height: 200px;
+	}
+}
+
+@media (max-width: 940px) {
+	.container {
+		flex-direction: column;
+		margin-top: 60px;
+	}
+
+	.left-column,
+	.right-column {
+		width: 100%;
+	}
+
+	.left-column img {
+		width: 300px;
+		right: 0;
+		top: -65px;
+		left: initial;
+	}
+}
+
+@media (max-width: 535px) {
+	.left-column img {
+		width: 220px;
+		top: -85px;
+	}
+}
+
+.car {
+	background-color: white;
+	color: white;
+	
+	margin: 20px;
+	padding: 20px;
+  }
+  .car h2 {
+text-transform: uppercase;
+color: black;
+font-weight: bold;
+font-style: italic;
+  }
+.car p {
+	color: palevioletred;
+}
+.car img {
+	width: 500px;
+	
+}
+.car a {
+	border: 2px solid black;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: black;
+}
+.car h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font: italic;
+	color: black;
+}
+.featured-item h2 {
+	text-transform: uppercase;
+	color: black;
+}
+
